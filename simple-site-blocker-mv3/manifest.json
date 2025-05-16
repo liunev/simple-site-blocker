@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Site Blocker MV3",
+    "version": "1.0.0",
+    "description": "A simple Manifest V3 site blocker to help you stay focused.",
+    "permissions": [
+      "storage",
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback"
+    ],
+    "host_permissions": [],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png",
+        "64": "icons/icon-64.png",
+        "96": "icons/icon-96.png",
+        "128": "icons/icon-128.png"
+      }
+    },
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "icons": {
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "64": "icons/icon-64.png",
+      "96": "icons/icon-96.png",
+      "128": "icons/icon-128.png"
+    }
+  }
+  

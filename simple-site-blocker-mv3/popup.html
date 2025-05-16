@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Blocker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Site Blocker</h1>
+
+        <div class="blocker-toggle">
+            <label class="switch">
+                <input type="checkbox" id="blockerEnabledToggle">
+                <span class="slider round"></span>
+            </label>
+            <span id="blockerStatusText">Blocker Disabled</span>
+        </div>
+
+        <div id="pinSection" class="pin-section hidden">
+            <label id="pinLabel" for="pinInput">Enter PIN:</label>
+            <input type="password" id="pinInput" maxlength="8" placeholder="Enter PIN">
+            <div class="pin-buttons">
+                <button id="pinSubmitButton">Submit</button>
+                <button id="pinCancelButton">Cancel</button>
+            </div>
+            <p id="pinMessage"></p>
+        </div>
+        
+        <div id="mainControls">
+            <div class="input-group">
+                <input type="text" id="siteUrlInput" placeholder="e.g., example.com">
+                <button id="addSiteButton">Add Site</button>
+            </div>
+
+            <h2>Blocked Sites:</h2>
+            <ul id="blockedSitesList">
+                </ul>
+            <p id="noSitesMessage" class="hidden">No sites blocked yet.</p>
+        </div>
+        <div id="popupErrorMessage" class="popup-error hidden"></div>
+
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
